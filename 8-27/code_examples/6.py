@@ -1,14 +1,12 @@
-# 6: String literals
+# Yay, docstrings
+# Use them!
 
-print "Hello I'm a string"
-# Note that I have to escape the quote so it doesn't end the string
-print 'Hello, I\'m also a string.'
-# If you need a backslash you have to escape it.
-print "\\heard you liked escaping."
+def fact(n):
+    """This function computes a factorial. It uses recursion."""
+    if (n<=1): return 1
+    else:
+        return n * fact(n - 1)
 
-print """This is a very long statement
-it contains a bunch of text
-it can go on as long as it needs to
-"""
-
-print "This\ntext\ngoes\ndown\na\nways"
+if __name__ == "__main__":
+    print fact.__doc__
+    print fact(20)

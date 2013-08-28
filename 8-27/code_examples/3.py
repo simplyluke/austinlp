@@ -1,5 +1,17 @@
-# Slide 3: Identifiers
+import cmath
 
-a = "that's good"
-a1 = "Steak sauce is over-rated."
-this_is_a_overly_verbose_variable_name = "hi"
+# An integer, no quotes, just the number
+# Don't worry about longs, this isn't C :)
+
+i = 9192100193838382929928
+
+print i
+
+# Floating point numbers
+
+f = .2871 
+
+print f
+# complex numbers
+
+print cmath.sin(2 + 3j)

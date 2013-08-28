@@ -1,20 +1,21 @@
-# 5: Numeric Literals
+# Lists
 
-#cmath is used for performing operations on complex numbers
-import cmath
+a = [1, 3.93, 'hello world']
+a.append(2)
 
-# integer
-value = 192
+print a
 
-# boolean, and floating point
 
-# True
-if value > 3.148:
-    print "That's a big number!"
-# False
-else:
-    print "That's not a very big number!"
+# Tuples
 
-# Complex numbers, don't ask me for the fine points of these.
-wat = cmath.sin(2 + 5j)
-print wat
+b = (10, 20, 83)
+
+print b
+
+# Dictionaries
+
+c = {'a': 3,
+     (10, 182, 18): 42,
+    }
+
+print c[(10, 182, 18)]

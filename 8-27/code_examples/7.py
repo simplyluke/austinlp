@@ -1,5 +1,17 @@
-# 7: Unicdoe
+def trace(func):
+    def inner(*args, **kwargs):
+       
+        print func.__doc__
+        return func(*args, **kwargs)
+    return inner 
 
-u = u"This has some f\u00e1ncy characters."
 
-print u
+@trace
+def square(x):
+    """Return the square of 'x'"""
+    return x * x
+
+#def square(x):
+#    return x*x
+
+print square(10)

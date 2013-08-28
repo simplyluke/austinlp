@@ -1,16 +1,10 @@
-# slide 2: Indentation
+a = "A string"
 
-class MyClass:
-    """This is a docstring, it explains your class"""
-    def userEnteredName(name):
-        if name:
-            print "Hello, " + name
-        else:
-            print "Hello, user."
+def lorum():
+    if a:
+        print "foo"
+  else:
+        print "bar"
 
-    name = raw_input("Your name, please: \n")
-
-    userEnteredName(name)
-
-if __name__ == "__main__":
-    MyClass()
+if __name__ == '__main__':
+    lorum()
